@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: FHqxBu2UkPW1yhyPCMJxVi/e+2awTqU4NcDEcJ8a0NiGn7+yam4p68xg//ccjtTdu+bh8uPQbsXBryIXowA0PA1cyZVWYT7OYQmBInYIFfdGr5ycYTVWf3XncQvho2+406JK/bBhtgFoIxn2tuYu9LXA94zfNYVyqQxc8YR3yV3DhuVpMcF177kBUTOp/O4I3UzmLKODsglOlRiEzdtVD/KMafBRkgKAgwgJi5X9cunsLoDE8FAKhsFRGT7wb879xJL97SMaoLqGY9rY4Fx6ZvG7PzmlGzOIqhtGLs9BvgjufXdsuShLBS2Jsin4uSUlEqAXKIXWvgqb63X4WoVAEn0MNz+h0SDdF631NaqU3WqIkFZIQSjx9BV3x1SivFrZE1sLV8+9G2tNBd99jaZtz6sBevB0yCLTeVJTTT5FQuDWzuZTQAfFN0r8PeyncciabP5BkQouC85y6YAL3femg77hHOUcwcv3MkxlifyumxYWr0PTqFWbHqSgVB5zHBbTdSCH0MojFevPxEFUuh4InotEAgScunc8vIkEuw3gfAFmTvim/xSaziJbxtEk9qxXirF9v2gHBjBW8HyzH/A82xZp8U0nemBIzr6pcOKHNUFpiirlZ539HTClFVonSDeatSM++NUDND2wCGBRYgAhnZ2UcKoky0A7gg7Ayta+wTM=
+  app: safe-peak-57323
+  on:
+    repo: DavidShaw512/reactTrelloTesting
